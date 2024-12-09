@@ -1,11 +1,10 @@
 
 package org.africa.semicolon.quidexCurrencyApplication.dtos.responses;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-public class UserResponseDTO {
+public class UserRegistrationResponseDTO {
 
     private String id; // User ID
     private String message; // Message to indicate success or failure

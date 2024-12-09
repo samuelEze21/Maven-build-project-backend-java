@@ -10,19 +10,17 @@ import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
-@Document(collection = "currency_rates") // Marks this class as a MongoDB collection
+@Document(collection = "currency_rates")
 public class CurrencyRate {
 
     @Id
     private String id;
 
     @NotNull
-    private String fromCurrencyCode;  // e.g., USD
+    private String fromCurrencyCode;
     @NotNull
-    private String toCurrencyCode;    // e.g., EUR
-    @NotNull
-    private Double exchangeRate;      // e.g., 0.85 (USD to EUR)
+    private String toCurrencyCode;
 
-    private LocalDateTime lastUpdated; // Timestamp when the rate was last updated
+    private LocalDateTime lastUpdated;
 
 }

@@ -1,18 +1,20 @@
 package org.africa.semicolon.quidexCurrencyApplication.data.models;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Data
-@NoArgsConstructor
-@Document(collection = "currencies") // Marks this class as a MongoDB collection
+@Getter
+@Setter
+@Document(collection = "currency")
+
 public class Currency {
 
-    @Id // Primary key for MongoDB
+    @Id
     private String id;
-
     private String currencyCode;
     private String currencyName;
     private String symbol;

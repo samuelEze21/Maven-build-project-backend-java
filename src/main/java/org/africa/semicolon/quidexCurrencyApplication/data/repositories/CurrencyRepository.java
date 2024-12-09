@@ -1,4 +1,4 @@
-package org.africa.semicolon.quidexCurrencyApplication.repositories;
+package org.africa.semicolon.quidexCurrencyApplication.data.repositories;
 
 
 import org.springframework.data.mongodb.repository.MongoRepository;
